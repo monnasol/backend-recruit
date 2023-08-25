@@ -18,6 +18,9 @@ TAGS = [
     "forbidden_words_in_message"
 ]
 
+# > { "content": "content to detect" }
+# => { "clean": true/false, "detected_flags": ["url_detected", "phone_number_detected"] }
+
 @app.post("/analyze")
 async def analyze_content(item: Item):
     response = {
