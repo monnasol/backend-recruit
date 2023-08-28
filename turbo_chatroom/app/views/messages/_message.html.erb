@@ -1,3 +1,4 @@
+<%= turbo_frame_tag dom_id(message) do %>
 <div class="cont-<%=message.user.id%>">
   <div class="message-box msg-<%= message.user.id %>">
     <div class="d-flex align-items-center">
@@ -15,3 +16,4 @@
     <%= render "messages/attachments", message: message %>
   </div>
 </div>
+<% end %>
