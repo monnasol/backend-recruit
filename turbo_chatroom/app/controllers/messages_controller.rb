@@ -16,8 +16,8 @@ class MessagesController < ApplicationController
 
     return unless should_create_message
 
-    if @message.save
-      # publish the message to redis stream 'messages'
+    if @message.save # this will update the frontend
+      # and this will publish the message to redis stream 'messages'
       params = {
         message_id: @message.id,
         body: @message.body,

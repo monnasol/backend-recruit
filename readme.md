@@ -1,6 +1,17 @@
 # Ticket nr 5555
 
-In turbo_chatroom app users has been sending other users some unwanted messages.
-We have message_analyzer python backend that has been used successfully in other projects to sanitize messages - we want to use it here to do the same.
-It can be run easily with docker, with POST requests sent to /analyze endpoint.
+AS IS:
 
+The turbo chatroom is a small application for users to talk to each other. You can sign up and send messages to other users, but if you send an unwanted message there is nothing nobody can do about it.
+
+TO BE:
+
+Write a companion app next to turbo chatroom that will help admins moderate the users activity. It needs following functionalites
+- login for admins
+- view of messages being sent
+- a button to hide given message. When it's pressed the message should be removed in turbo chatroom
+
+
+Connect the two applications however you want.
+
+Once done, pleace replace this readme with short documentation (bullet points) about what you did and why.

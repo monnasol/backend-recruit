@@ -8,12 +8,3 @@ services:
     image: postgres:latest
     environment:
       POSTGRES_PASSWORD: postgres
-
-  message-analyzer:
-    build:
-      context: ./message_analyzer
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
-    environment:
-      - PYTHONUNBUFFERED=1
