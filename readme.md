@@ -9,7 +9,7 @@ TO BE:
 Write a companion app next to turbo chatroom that will help admins moderate the users activity. It needs following functionalites
 - login for admins
 - view of messages being sent
-- a button to hide given message. When it's pressed the message should be removed in turbo chatroom
+- a button to hide given message. When it's pressed the message should be hidden in turbo chatroom
 
 
 Connect the two applications however you want.
